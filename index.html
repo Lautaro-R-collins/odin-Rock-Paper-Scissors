@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>rock paper or scissors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+
+    <main>
+        <!-- Show choice -->
+        <div class="scoreboard">
+            <h2 id="scoreInfo">Choose your weapon</h2>
+            <h3 id="scoreMessage">First to score 5 points wins the game</h3>
+            <div class="scores-container">
+                <div class="score-box">
+                  <div class="sign" id="playerSign">👤</div>
+                  <p class="score" id="playerScore">Player: 0</p>
+                </div>
+                <div class="score-box">
+                  <div class="sign" id="computerSign">💻</div>
+                  <p class="score" id="computerScore">Computer: 0</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- choose options -->
+
+        <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+              <div class="sign-1">✊🏼</div>
+            </button>
+            <button class="btn btn-square" id="paperBtn">
+              <div class="sign-1">✋🏼</div>
+            </button>
+            <button class="btn btn-square" id="scissorsBtn">
+              <div class="sign-1">✌🏼</div>
+            </button>
+        </div>
+
+    </main>
+    
+    <!-- final message -->
+
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <footer>
+        <h4>© 2023 The Odin Project. Lautaro Rodriguez Collins.</h4>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

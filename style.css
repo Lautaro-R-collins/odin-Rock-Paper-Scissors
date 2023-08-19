@@ -1,0 +1,223 @@
+:root {
+    --primary: #111827;
+    --fonts: #FFF8E1;
+    --header: #181717;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    src: url(./icon-font/Pixel\ Emulator.otf);
+    background-color: var(--primary);
+    text-align: center;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    background-color: var(--header);
+}
+
+/* texts */
+
+h1 {
+    font-family: Pixel Emulator;
+    text-align: center;
+    font-size: 3.3em;
+    color: var(--fonts);
+    background-color: var(--header);
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    color: var(--fonts);
+    margin: 0.5em;   
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: var(--fonts);
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: var(--fonts);
+}
+
+/* game */
+
+main {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.scoreboard {
+    margin-bottom: 15px;
+}
+
+.scores-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.score {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: var(--fonts);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.sign {
+    font-size: 7em;
+    margin-bottom: 15px;
+}
+
+.sign-1 {
+    font-size: 5em;
+    line-height: 0;
+}
+
+/* Buttons choise */
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+
+.buttons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: var(--secondary-dark);
+}
+  
+.btn-square {
+  width: 160px;
+  height: 160px;
+}
+  
+.btn:hover {
+  background-color: var(--secondary-dark-hover);
+}
+  
+.btn:active {
+   background-color: var(--secondary-dark-active);
+}
+ 
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+/* final message */
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 2em;
+    color: var(--fonts);
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .btn-restart {
+    padding: 5px 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+
+/* responsive for mobile*/
+
+@media (max-width: 550px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 25px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+  
+    .buttons {
+      gap: 10px;
+    }
+  
+    .btn-square {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .sign {
+      font-size: 50px;
+    }
+  
+    .modal {
+      width: 95%;
+    }
+}
