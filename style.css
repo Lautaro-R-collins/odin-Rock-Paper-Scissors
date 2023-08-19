@@ -239,7 +239,7 @@ footer {
         line-height: 0;
         
     }
-  
+   
     .modal {
       width: 95%;
     }
@@ -249,3 +249,20 @@ footer {
         margin-top: 140px;
     }
 }
+
+/* responsive for tablet*/
+
+@media (min-width: 551px) and (max-width: 1024px) {
+  footer {
+    padding: 5px;
+    margin-top: 170px;
+  }
+.scores-container {
+  padding: 40px;
+  }
+}
+
+
+
+
+
