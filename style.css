@@ -193,31 +193,53 @@ footer {
 
 @media (max-width: 550px) {
     h1 {
-      font-size: 20px;
+      font-size: 1.3em;
+      font-family: Pixel Emulator;
     }
   
     h2 {
-      font-size: 25px;
+      font-size: 1.7em;
+      margin-bottom: 50px;
     }
 
     h3 {
-        font-size: 12px;
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 0.7em;
     }
   
     .buttons {
       gap: 10px;
+      margin-top: 40px;
     }
   
     .btn-square {
       width: 100px;
       height: 100px;
     }
+
+    .scoreboard {
+      margin: 0px;
+    }   
   
     .sign {
       font-size: 50px;
+      margin-top: 40px;
+    }
+
+    .sign-1 {
+        font-size: 40px;
+        line-height: 0;
     }
   
     .modal {
       width: 95%;
+    }
+
+    footer {
+        padding: 5px;
+        margin-top: 60px;
     }
 }
