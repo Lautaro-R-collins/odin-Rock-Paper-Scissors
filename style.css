@@ -198,7 +198,7 @@ footer {
     }
   
     h2 {
-      font-size: 1.7em;
+      font-size: 1.8em;
       margin-bottom: 50px;
     }
 
@@ -207,12 +207,13 @@ footer {
     }
 
     h4 {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
   
     .buttons {
       gap: 10px;
-      margin-top: 40px;
+      margin-top: 70px;
+
     }
   
     .btn-square {
@@ -223,15 +224,20 @@ footer {
     .scoreboard {
       margin: 0px;
     }   
-  
+
+    .scores-container {
+      padding: 25px;
+    }
+
     .sign {
-      font-size: 50px;
+      font-size: 75px;
       margin-top: 40px;
     }
 
     .sign-1 {
-        font-size: 40px;
+        font-size: 55px;
         line-height: 0;
+        
     }
   
     .modal {
@@ -240,6 +246,6 @@ footer {
 
     footer {
         padding: 5px;
-        margin-top: 60px;
+        margin-top: 140px;
     }
 }
